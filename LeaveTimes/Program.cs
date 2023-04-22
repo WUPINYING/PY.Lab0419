@@ -55,7 +55,7 @@ namespace LeaveTimes
 					DateTime noon = new DateTime(value.Year, value.Month, value.Day, 12, 0, 0);
 					DateTime aft = new DateTime(value.Year, value.Month, value.Day, 13, 0, 0);
 
-					if (value < DateTime.Today) // 如果設置的值早於今天，拋出例外
+					if (value < DateTime.Now) // 如果設置的值早於今天，拋出例外
 					{
 						throw new ArgumentException("請假日期不能早於今天！");
 					}
@@ -86,9 +86,17 @@ namespace LeaveTimes
 					DateTime aft = new DateTime(value.Year, value.Month, value.Day, 13, 0, 0);
 					DateTime nig = new DateTime(value.Year, value.Month, value.Day, 18, 0, 0);
 
-					if (value < DateTime.Today || value.Date < LeaveStart.Date || value.TimeOfDay < LeaveStart.TimeOfDay) // 如果設置的值早於今天或是請假時間，拋出例外
+					if (value < DateTime.Now) // 如果設置的值早於今天或是請假時間，拋出例外
 					{
-						throw new ArgumentException("請假結束日期有問題!");
+						throw new ArgumentException("請假結束日期不可早於今日!");
+					}
+					else if (value.Date < _leaveStart.Date)
+					{
+						throw new ArgumentException("請假結束日期不可早於請假日期!");
+					}
+					else if (value.TimeOfDay < _leaveStart.TimeOfDay)
+					{
+						throw new ArgumentException("請假結束日期不可早於請假日期!");
 					}
 
 					if (value.TimeOfDay > noon.TimeOfDay && value.TimeOfDay <= aft.TimeOfDay)  //結束請假時間晚於12:00、早於13:00就算到12:00
