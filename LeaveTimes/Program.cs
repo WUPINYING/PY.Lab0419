@@ -43,6 +43,7 @@ namespace LeaveTimes
 		{
 			private DateTime _leaveStart;
 			private DateTime _leaveEnd;
+
 			public DateTime LeaveStart //請假開始時間
 			{
 				get

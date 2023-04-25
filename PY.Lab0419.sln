@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveTimes", "LeaveTimes\Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{DC8B9847-96F9-4BF5-A12B-7F45DE1B495B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveTimes_2", "LeaveTimes_2\LeaveTimes_2.csproj", "{F88D29E7-E579-4C08-842B-97E859C715A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveTimes_2_Tests", "LeaveTimes_2_Tests\LeaveTimes_2_Tests.csproj", "{32A6B0C1-DB8A-4BCD-BB11-47771F83D1F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{DC8B9847-96F9-4BF5-A12B-7F45DE1B495B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC8B9847-96F9-4BF5-A12B-7F45DE1B495B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC8B9847-96F9-4BF5-A12B-7F45DE1B495B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88D29E7-E579-4C08-842B-97E859C715A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88D29E7-E579-4C08-842B-97E859C715A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88D29E7-E579-4C08-842B-97E859C715A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88D29E7-E579-4C08-842B-97E859C715A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A6B0C1-DB8A-4BCD-BB11-47771F83D1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A6B0C1-DB8A-4BCD-BB11-47771F83D1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A6B0C1-DB8A-4BCD-BB11-47771F83D1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A6B0C1-DB8A-4BCD-BB11-47771F83D1F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
